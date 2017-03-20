@@ -2,9 +2,7 @@ package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
 
-/**
- * Created by user on 3/19/2017.
- */
+
 public class UserMeal {
 
     protected final LocalDateTime dateTime;
@@ -29,6 +27,11 @@ public class UserMeal {
 
     public int getCalories() {
         return calories;
+    }
+
+    @Override
+    public String toString() {
+        return description + " : " + calories;
     }
 
 }

@@ -2,9 +2,7 @@ package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
 
-/**
- * Created by user on 3/19/2017.
- */
+
 public class UserMealWithExceed {
 
     protected final LocalDateTime dateTime;
@@ -20,5 +18,10 @@ public class UserMealWithExceed {
         this.description = description;
         this.calories = calories;
         this.exceed = exceed;
+    }
+
+    @Override
+    public String toString() {
+        return description + " : " + calories + " : " + (exceed ? "exceed" : "not exceed");
     }
 }
